@@ -1,4 +1,4 @@
-import React, {Component} from 'react'
+import React from 'react'
 import {render} from 'react-dom'
 import {Router, Route, Link, hashHistory} from 'react-router'
 import Request from 'react-http-request';
@@ -6,6 +6,9 @@ import GoodItem from './GoodItem'
 import GoodPage from './GoodPage'
 import Page from './Page'
 import Loader from './Loader'
+import MapContainer from './GMaps'
+
+
 
 const RequestGoods = React.createClass({
     render() {
@@ -100,7 +103,7 @@ const Contacts = React.createClass({
                 </div>
 
                 <div className="col-md-12">
-                    <div id="map"></div>
+                    <MapContainer/>
                 </div>
             </div>
         </div>
