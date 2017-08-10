@@ -13759,7 +13759,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _react2.default.createClass({
     displayName: 'GoodItem',
     render: function render() {
-        var imgLink = this.props.item.images.length ? "http://127.0.0.1:8000/" + this.props.item.images[0].image : "http://127.0.0.1:8000/media/not_good.jpg";
+        var imgLink = this.props.item.images.length ? "http://notprometey.pythonanywhere.com/" + this.props.item.images[0].image : "http://notprometey.pythonanywhere.com/media/not_good.jpg";
         var size = this.props.item.characteristic;
         if (size.length) {
             size = size.reduce(function (pre, item) {
@@ -13849,7 +13849,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _react2.default.createClass({
     displayName: 'GoodPage',
     render: function render() {
-        var imgLink = this.props.item.images.length ? "http://127.0.0.1:8000/" + this.props.item.images[0].image : "http://127.0.0.1:8000/media/not_good.jpg";
+        var imgLink = this.props.item.images.length ? "http://notprometey.pythonanywhere.com/" + this.props.item.images[0].image : "http://notprometey.pythonanywhere.com/media/not_good.jpg";
 
         return _react2.default.createElement(
             'div',
@@ -14119,7 +14119,7 @@ exports.default = _react2.default.createClass({
         return _react2.default.createElement(
             _reactHttpRequest2.default,
             {
-                url: 'http://127.0.0.1:8000/api/category/',
+                url: 'http://notprometey.pythonanywhere.com/api/category/',
                 method: 'get',
                 accept: 'application/json',
                 verbose: true
@@ -14461,7 +14461,7 @@ var RequestGoods = _react2.default.createClass({
         return _react2.default.createElement(
             _reactHttpRequest2.default,
             {
-                url: 'http://127.0.0.1:8000/api/category/' + this.props.alias + '/goods/',
+                url: 'http://notprometey.pythonanywhere.com/api/category/' + this.props.alias + '/goods/',
                 method: 'get',
                 accept: 'application/json',
                 verbose: true
@@ -14502,7 +14502,7 @@ var RequestGood = _react2.default.createClass({
         return _react2.default.createElement(
             _reactHttpRequest2.default,
             {
-                url: "http://127.0.0.1:8000/api/goods/" + this.props.alias + "/",
+                url: "http://notprometey.pythonanywhere.com/api/goods/" + this.props.alias + "/",
                 method: 'get',
                 accept: 'application/json',
                 verbose: true
