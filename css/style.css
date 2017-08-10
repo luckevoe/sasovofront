@@ -1,0 +1,889 @@
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+html{-webkit-text-size-adjust: none;}
+
+.navbar-default .navbar-nav>li>a {
+    border: none !important;
+}
+
+.dark-head{
+    margin: 4px 0;
+}
+.line-head{
+    height: 5px;
+    width: 100%;
+    background: #fff;
+    position: absolute;
+    top: 48px;
+    left: 0;
+}
+.dark-head div:first-child .line-head{
+    width: 42px;
+    right: 0;
+    left: auto;
+}
+.dark-head div:last-child .line-head {
+    left: -15px;
+}
+
+.phone{
+    font-family: Tahoma, Helvetica, sans-serif;
+    color: #fff;
+    text-align: right;
+    font-size: 34px;
+}
+
+.catalog ul li{padding:10px 0 0 0;}
+
+#map{
+    height: 500px;
+}
+.sprite-logo{
+    margin-top: 5px;
+    height: 70px;
+}
+.dark-head .name {
+    background: #333;
+    color: #f2f2f2;
+    height: auto;
+    font-size: 20px;
+    font-family: 'Sitka Banner', sans-serif;
+    float: left;
+}
+.name H2{
+    text-decoration: underline;
+    margin-bottom: -3px;
+    font-size: 50px;
+    margin-top: 0;
+}
+.name p{
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.menu-head{
+
+}
+.menu-footer{
+     background: #f2f2f2;
+     height: 150px;
+     border: none;
+ }
+.info-footer{
+    background: #333;
+    border: none;
+    color: #f2f2f2;
+}
+.navbar-default{
+    background: #f2f2f2;
+    box-shadow: none;
+    border: none;
+}
+.navbar-nav li a{
+    font-size: 13px;
+    font-weight: 400;
+    margin: 15px;
+    padding: 0;
+}
+.navbar-nav li a:hover{
+    border-bottom: dashed 1px;
+}
+.navbar .container .collapse:not(.in) .navbar-nav li:not(:last-child) a:after{
+    content: '/';
+    position: absolute;
+    right: -17px;
+    color: #777;
+
+}
+
+.navbar-nav li > a.active{
+    border-bottom: dashed 1px !important;
+    background-color: #f2f2f2 !important;
+    box-shadow: none !important;
+    background-image: none !important;
+    color: #000 !important;
+}
+.info-head{
+    background: #333;
+    margin-top: 50px;
+    height: 84px;
+    background: url(../img/fon.png);
+    background-repeat: repeat-x;
+    background-size: 312px;
+    background-position: bottom;
+}
+.bottom-head{
+    background: #f2f2f2;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.menu-btn{
+    position: fixed;
+    display: block;
+    bottom: 10px;
+    left: 20px;
+    display: block !important;
+    color: #0f0f0f;
+    font-size: 40px;
+}
+
+
+div.fone{
+    position:relative;
+    word-spacing:-1px;
+    padding: 0 0 0 15px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+div.fone div.table{
+    color:#fff;
+    border-spacing:2px;
+}
+div.fone div.table div.one{
+
+    color: #fff;
+    font-size: 24px;
+    line-height: 1;
+    text-align: right;
+    text-decoration: none;
+}
+div.fone div.table div.two a{
+    color:#fff;
+    text-decoration:none;
+    border-bottom:1px dashed #fff;
+    font-size:12px;
+    padding:2px 0 0 0;
+    margin-right: 0px;
+    float:left;
+}
+div.fone div.table div.two div:first-child a{
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+div.fone div.table div.two{
+    position: relative;
+    padding: 0;
+}
+
+.contact > div{
+    text-align: right;
+}
+.contact a:hover{
+    border-bottom:none !important;
+}
+
+.contact a {
+    color: #fff;
+    font-size: 12px;
+    text-decoration-line: none;
+    border-bottom:1px dashed #fff;
+}
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .name img{
+        width: auto;
+        height: auto;
+    }
+    div.fone{
+        position:relative;
+        word-spacing:-1px;
+        padding: 0;
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+    div.fone div.table{
+        color:#fff;
+        border-spacing:2px;
+    }
+    div.fone div.table div.one{
+        font-size: 24px;
+        line-height:1;
+        text-align:center;
+        margin:0 10px 5px 0;
+    }
+    div.fone div.table div.two a{
+        color:#fff;
+        text-decoration:none;
+        border-bottom:1px dashed #fff;
+        font-size:12px;
+        padding:2px 0 0 0;
+        margin-right: 0px;
+        float:right;
+    }
+    div.fone div.table div.two div:last-child a{
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+    div.fone div.table div.two{
+        position: relative;
+        padding: 0;
+    }
+
+    div.fone div.table div.one{
+        text-align:right;
+    }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .catalog h3{text-transform:uppercase;text-align:center;font-weight:400;color:#000;font-size:16px;margin:38px 0 18px;}
+    .catalog ul{margin:0;padding:0;font-family:Tahoma;}
+    .catalog ul li{display:block;border-bottom:1px solid #e6e6e6;padding:10px 0 13px;}
+    .catalog ul li a img{float:left;border:1px solid #f0f0f0;margin:0 11px 0 13px;}
+    .catalog ul li a{color:#969090;font-size:14px;text-decoration:none;}
+    .catalog ul li a p{line-height:1;margin:0;}
+    .catalog ul li a span{color:#0f0f0f;font-size:16px;}
+    .catalog ul li a span:hover{border-bottom:1px dashed #0f0f0f;}
+    .catalog ul li ul{border:none;margin:5px 0 0;padding:0 0 0 76px; line-height: 1.2;}
+    .catalog ul li ul li{display:list-item;border:none;list-style-type:disc;padding:0;}
+    .catalog ul li ul li a{color:#1a1a1a;border:none;text-decoration:none;font-size:13px;}
+    .catalog ul li ul li a:hover{border-bottom:1px dashed #1a1a1a;}
+    .menu-btn{display: none !important;}
+}
+
+
+.sprite-granit{background:url(../img/sprite_pqd.png) no-repeat top left;background-position:-152px 0;width:36px;height:36px;float:left;border:1px solid #f0f0f0;margin:0 11px 0 13px;}
+.sprite-polimer{background:url(../img/sprite_pqd.png) no-repeat top left;background-position:-899px 0;width:36px;height:36px;float:left;border:1px solid #f0f0f0;margin:0 11px 0 13px;}
+.sprite-ograda{background:url(../img/sprite_pqd.png) no-repeat top left;background-position:-823px 0;width:36px;height:36px;float:left;border:1px solid #f0f0f0;margin:0 11px 0 13px;}
+.sprite-cokol{background:url(../img/sprite_pqd.png) no-repeat top left;background-position:0 0;width:36px;height:36px;float:left;border:1px solid #f0f0f0;margin:0 11px 0 13px;}
+.sprite-cvetnik{background:url(../img/sprite_pqd.png) no-repeat top left;background-position:-38px 0;width:36px;height:36px;float:left;border:1px solid #f0f0f0;margin:0 11px 0 13px;}
+.sprite-plitka{background:url(../img/sprite_pqd.png) no-repeat top left;background-position:-861px 0;width:36px;height:36px;float:left;border:1px solid #f0f0f0;margin:0 11px 0 13px;}
+.sprite-stolik{background:url(../img/sprite_pqd.png) no-repeat top left;background-position:-975px 0;width:36px;height:36px;float:left;border:1px solid #f0f0f0;margin:0 11px 0 13px;}
+.sprite-uslugi{background:url(../img/sprite_pqd.png) no-repeat top left;background-position:-1105px 0;width:36px;height:36px;float:left;border:1px solid #f0f0f0;margin:0 11px 0 13px;}
+.sprite-vaza{background:url(../img/sprite_pqd.png) no-repeat top left;background-position:-1143px 0;width:36px;height:36px;float:left;border:1px solid #f0f0f0;margin:0 11px 0 13px;}
+.sprite-oformlenie{background:url(../img/sprite_pqd.png) no-repeat top left;background-position:-785px 0;width:36px;height:36px;float:left;border:1px solid #f0f0f0;margin:0 11px 0 13px;}
+.sprite-info{background:url(../img/sprite_pqd.png) no-repeat top left;background-position:-634px 0;width:36px;height:36px;float:left;border:1px solid #f0f0f0;margin:0 11px 0 13px;}
+.sprite-sale{background:url(../img/sprite_pqd.png) no-repeat top left;background-position:-937px 0;width:36px;height:36px;float:left;border:1px solid #f0f0f0;margin:0 11px 0 13px;}
+.sprite-icon_kachestvo{background:url(../img/sprite_pqd.png) no-repeat top left;background-position:-190px 0;width:72px;height:72px;margin:0 0 0 125px;}
+.sprite-icon_nizkie_ceni{background:url(../img/sprite_pqd.png) no-repeat top left;background-position:-264px 0;width:72px;height:72px;margin:0 0 0 125px;}
+.sprite-icon_osvesheno{background:url(../img/sprite_pqd.png) no-repeat top left;background-position:-338px 0;width:72px;height:72px;margin:0 0 0 125px;}
+.sprite-icon_pod_kluch{background:url(../img/sprite_pqd.png) no-repeat top left;background-position:-412px 0;width:72px;height:72px;margin:0 0 0 125px;}
+.sprite-icon_skidki{background:url(../img/sprite_pqd.png) no-repeat top left;background-position:-486px 0;width:72px;height:72px;margin:0 0 0 125px;}
+.sprite-icon_zakaz{background:url(../img/sprite_pqd.png) no-repeat top left;background-position:-560px 0;width:72px;height:72px;margin:0 0 0 125px;}
+.sprite-vk{background:url(../img/sprite_pqd.png) no-repeat top left;background-position:-1181px 0;width:26px;height:26px;float:left;margin:0 5px 0 0;}
+.sprite-yt{background:url(../img/sprite_pqd.png) no-repeat top left;background-position:-1209px 0;width:26px;height:26px;float:left;margin:0 5px 0 0;}
+.sprite-od{background:url(../img/sprite_pqd.png) no-repeat top left;background-position:-757px 0;width:26px;height:26px;float:left;margin:0 5px 0 0;}
+.sprite-tw{background:url(../img/sprite_pqd.png) no-repeat top left;background-position:-1013px 0;width:26px;height:26px;float:left;margin:0 5px 0 0;}
+.sprite-fb{background:url(../img/sprite_pqd.png) no-repeat top left;background-position:-96px 0;width:26px;height:26px;float:left;margin:0 5px 0 0;}
+.sprite-gp{background:url(../img/sprite_pqd.png) no-repeat top left;background-position:-124px 0;width:26px;height:26px;float:left;margin:0 5px 0 0;}
+.sprite-konsult{background:url(../img/sprite_pqd.png) no-repeat top left;background-position:-672px 0;width:45px;height:41px;float:left;}
+.sprite-logo{
+    background:url(../img/logo.png) no-repeat top center;
+    background-size: contain;
+    float: left;
+    width: 85px;
+    background-color: #333;
+}
+.sprite-exit{background-position:-76px 0;width:18px;height:18px;}
+
+.right_coll a {
+    color: #191919;
+    text-decoration: none;
+    border-bottom: 1px dashed #191919;
+}
+
+.right_coll {
+    padding-bottom: 0;
+}
+
+
+div.blok1 div.elem1 div.table div.price {
+    text-align: center;
+    font-size: 20px;
+    margin: 0 0 2px;
+}
+
+
+div.blok2 div.left {
+    float: left;
+    width: 320px;
+}
+
+div.blok2 div.right {
+    float: right;
+    width: 320px;
+}
+
+div.blok2 div.table {
+    font-size: 15px;
+    text-align: center;
+    line-height: 1.7;
+}
+
+div.blok2 div.table div.one {
+    font-weight: 700;
+    font-size: 23px;
+    padding: 5px 0;
+}
+
+div.blok2 h2, div.blok3 h2, div.blok4 h2, div.blok1 h2 {
+    position: relative;
+    text-align: center;;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin: 10px 0 30px;
+    padding: 0 30px;
+}
+
+
+
+div.blok3 div.left {
+    width: 220px;
+    height: 165px;
+    float: left;
+}
+
+
+div.blok3 div.right {
+    width: 220px;
+    height: 165px;
+    float: right;
+}
+
+div.blok5 div.table {
+    font-size: 14px;
+    width: 100%;
+    overflow: hidden;
+}
+
+div.blok5 div.table div.top div {
+    float: left;
+    border-bottom: 1px solid #e6e6e6;
+    width: 231px;
+    padding: 14px 0 14px 2px;
+}
+
+
+
+div.blok5 div.table div.line div {
+    overflow: hidden;
+    border-bottom: 1px solid #e6e6e6;
+    width: 231px;
+    float: left;
+    padding: 17px 0 17px 2px;
+}
+
+div.blok7 div.left h3 {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 26px;
+    margin-left: 10px;
+}
+
+div.blok7 div.left ul {
+    line-height: 0.5;
+    margin: 0;
+    padding: 13px 0 0 26px;
+}
+
+div.blok7 div.left ul li {
+    line-height: 1.3;
+}
+
+div.tovar {
+    overflow: hidden;
+    margin: 0 0 15px;
+}
+
+div.tovar div.left {
+    margin: 0;
+}
+
+div.tovar div.left div.img, div.tovar div.left div.img_small {
+    width: 100%;
+    border: 1px dashed #ececec;
+    text-align: center;
+    margin: 3px 0 0;
+    padding: 20px 0 20px;
+}
+
+div.tovar div.left p {
+    font-size: 12px;
+    text-align: center;
+    margin: 15px 0;
+}
+
+div.tovar div.right {
+    margin: 0 0 15px;
+}
+
+div.tovar div.right p.price {
+    font-size: 29px;
+    margin: 5px 0 20px;
+}
+
+div.tovar div.right p.price span {
+    font-size: 20px;
+}
+
+div.tovar div.right p.price input[type=button] {
+    background: #000;
+    border-radius: 5px;
+    border: 2px solid #1a1a1a;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    float: right;
+    margin: 0 15px 0 0;
+    padding: 10px 24px;
+}
+
+div.tovar div.right h3 {
+    font-weight: 700;
+    color: #4c4c4c;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin: 22px 0 9px;
+}
+
+div.tovar div.right ul {
+    font-size: 14px;
+    margin: 14px 0 0;
+    padding: 0 0 0 14px;
+}
+
+div.tovar div.right ul li {
+    line-height: 1.6;
+    word-spacing: -2px;
+}
+
+div.tovar div.right div.table {
+    font-size: 14px;
+}
+
+div.tovar div.right div.table div.tr {
+    border-bottom: 1px solid #e6e6e6;
+    padding: 11px 0;
+}
+
+div.tovar div.right div.table div.one {
+    color: gray;
+    width: 130px;
+    float: left;
+}
+
+
+div.tovar div.text h3 {
+    font-weight: 700;
+    color: #4c4c4c;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin: 0 0 9px;
+}
+
+div.blok1 div.right, div.up a.right {
+    float: right;
+}
+
+
+div.blok1 a {
+    border-bottom: 0px;
+}
+
+.elem1 .name a {
+    color: #191919;
+    text-decoration: none;
+    border-bottom: 1px dashed #191919;
+    font-size: 15px;
+}
+
+div.tovar div.left a {
+    border-bottom: 0px;
+}
+
+.popup-with3 input{
+    font-size: 14px;
+    padding: 7px 24px !important;
+}
+h1{
+    font-weight: 400;
+    font-size: 24px;
+    margin: 10px 0 25px;
+    line-height: 0.8;
+}
+p{
+    line-height: 1.5;
+    margin: 0px 0px 10px 0px;
+    text-align: justify;
+}
+.right_coll{
+    font-family: Tahoma;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+}
+
+
+div.blok1 div.elem1 div.table{
+    padding: 5px 0;
+    border:1px dashed #e6e6e6;
+}
+
+div.blok1 div.elem1 div.table div.complekt {
+    text-align: center;
+    font-size: 12px;
+    color: #808080;
+    margin: 0;
+}
+
+div.blok1 div.elem1 div.table div.name{
+    margin-bottom: 5px;
+    text-align: center
+}
+.div-img{
+    width: 100%;
+    padding-bottom: 120%;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+a {
+    color: #191919;
+    text-decoration: none;
+    border-bottom: 1px dashed #191919;
+}
+
+{
+    padding-bottom: 0;
+}
+
+
+div.blok1 div.elem1 div.table div.price {
+    text-align: center;
+    font-size: 20px;
+    margin: 0 0 2px;
+}
+
+
+div.blok2 div.left {
+    float: left;
+    width: 320px;
+}
+
+div.blok2 div.right {
+    float: right;
+    width: 320px;
+}
+
+div.blok2 div.table {
+    font-size: 15px;
+    text-align: center;
+    line-height: 1.7;
+}
+
+div.blok2 div.table div.one {
+    font-weight: 700;
+    font-size: 23px;
+    padding: 5px 0;
+}
+
+div.blok2 h2, div.blok3 h2, div.blok4 h2, div.blok1 h2 {
+    position: relative;
+    text-align: center;;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin: 10px 0 30px;
+    padding: 0 30px;
+}
+
+
+
+div.blok3 div.left {
+    width: 220px;
+    height: 165px;
+    float: left;
+}
+
+
+div.blok3 div.right {
+    width: 220px;
+    height: 165px;
+    float: right;
+}
+
+div.blok5 div.table {
+    font-size: 14px;
+    width: 100%;
+    overflow: hidden;
+}
+
+div.blok5 div.table div.top div {
+    float: left;
+    border-bottom: 1px solid #e6e6e6;
+    width: 231px;
+    padding: 14px 0 14px 2px;
+}
+
+
+
+div.blok5 div.table div.line div {
+    overflow: hidden;
+    border-bottom: 1px solid #e6e6e6;
+    width: 231px;
+    float: left;
+    padding: 17px 0 17px 2px;
+}
+
+div.blok7 div.left h3 {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 26px;
+    margin-left: 10px;
+}
+
+div.blok7 div.left ul {
+    line-height: 0.5;
+    margin: 0;
+    padding: 13px 0 0 26px;
+}
+
+div.blok7 div.left ul li {
+    line-height: 1.3;
+}
+
+div.tovar {
+    overflow: hidden;
+    margin: 0 0 15px;
+}
+
+div.tovar div.left {
+    margin: 0;
+}
+
+div.tovar div.left div.img, div.tovar div.left div.img_small {
+    width: 100%;
+    border: 1px dashed #ececec;
+    text-align: center;
+    margin: 3px 0 0;
+    padding: 20px 0 20px;
+}
+
+div.tovar div.left p {
+    font-size: 12px;
+    text-align: center;
+    margin: 15px 0;
+}
+
+div.tovar div.right {
+    margin: 0 0 15px;
+}
+
+div.tovar div.right div.price, div.tovar div.right div.price div.price {
+    font-size: 29px;
+    margin: 5px 0 20px;
+}
+div.tovar div.right div.price div.price{
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+div.tovar div.right div.price span {
+    font-size: 20px;
+}
+
+div.tovar div.right div.price input[type=button] {
+    background: #000;
+    border-radius: 5px;
+    border: 2px solid #1a1a1a;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    float: right;
+    margin: 0 15px 0 0;
+    padding: 10px 24px;
+}
+
+div.tovar div.right h3 {
+    font-weight: 700;
+    color: #4c4c4c;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin: 22px 0 9px;
+}
+
+div.tovar div.right ul {
+    font-size: 14px;
+    margin: 14px 0 0;
+    padding: 0 0 0 14px;
+}
+
+div.tovar div.right ul li {
+    line-height: 1.6;
+    word-spacing: -2px;
+}
+
+div.tovar div.right div.table {
+    font-size: 14px;
+}
+
+div.tovar div.right div.table div.tr {
+    border-bottom: 1px solid #e6e6e6;
+    padding: 11px 0;
+}
+
+div.tovar div.right div.table div.one {
+    color: gray;
+    width: 130px;
+    float: left;
+}
+
+
+div.tovar div.text h3 {
+    font-weight: 700;
+    color: #4c4c4c;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin: 0 0 9px;
+}
+
+div.blok1 div.right, div.up a.right {
+    float: right;
+}
+
+div.blok1 a {
+    border-bottom: 0px;
+}
+div.blok1 .elem1 .name{
+    color: #fff;
+    width: 100%;
+    height: auto;
+    font-size: 17px;
+    font-family: Candara;
+}
+div.blok1 .elem1 .name a {
+    color: #191919;
+    text-decoration: none;
+    border-bottom: 1px dashed #191919;
+    font-size: 15px;
+}
+
+div.blok1 div.tovar div.left a {
+    border-bottom: 0px;
+}
+
+div.blok1 .popup-with3 input{
+    font-size: 14px;
+    padding: 7px 24px !important;
+}
+div.blok1 h1{
+    font-weight: 400;
+    font-size: 24px;
+    margin: 10px 15px 25px;
+    line-height: 0.8;
+}
+div.blok1 p{
+    line-height: 1.5;
+    margin: 0px 0px 10px 0px;
+    text-align: justify;
+}
+div.blok1{
+    font-family: Tahoma;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+}
+
+
+div.blok1 div.elem1 div.table{
+    padding: 5px 0;
+    border:1px dashed #e6e6e6;
+}
+
+div.blok1 div.elem1 div.table div.gabar {
+    font-size: 12px;
+    color: #808080;
+    text-align: center;
+    vertical-align: top;
+    margin: 4px auto 0;
+}
+div.blok1 div.elem1 div.table div.complekt {
+    text-align: center;
+    font-size: 12px;
+    color: #808080;
+    margin: 0;
+}
+
+div.blok1 div.elem1 div.table div.name{
+    margin-bottom: 5px;
+    text-align: right;
+}
+#edit{
+    display: inline-block;
+    margin-bottom: 0;
+}
+#edit:before{
+    position: absolute;
+    cursor: pointer;
+    margin-left: -15px;
+    margin-top: -2px;
+    font-size: 13px;
+    font-family: 'Glyphicons Halflings';
+    content: "\e065";
+}
+#edit:focus {
+    outline: none;
+    border: #269abc 2px solid;
+    border-radius: 3px;
+}
+
+
+
+@keyframes lds-eclipse {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes lds-eclipse {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.lds-eclipse {
+  position: relative;
+}
+.lds-eclipse div {
+  position: absolute;
+  -webkit-animation: lds-eclipse 1s linear infinite;
+  animation: lds-eclipse 1s linear infinite;
+  width: 160px;
+  height: 160px;
+  top: 20px;
+    left: 50%;
+    margin-left: -80px;
+  border-radius: 50%;
+  box-shadow: 0 4px 0 0 #28292f;
+  -webkit-transform-origin: 80px 82px;
+  transform-origin: 80px 82px;
+}
+.lds-eclipse {
+  height: 151px !important;
+  -webkit-transform: translate(-25.5px, -25.5px) scale(0.255) translate(25.5px, 25.5px);
+  transform: translate(-25.5px, -25.5px) scale(0.255) translate(25.5px, 25.5px);
+}
+
+
